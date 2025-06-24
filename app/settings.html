@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/schoolLogo.png"
+      type="image/x-icon"
+    />
+    <title>Teachers</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../style/commen.css" />
+  </head>
+  <body>
+    <aside
+      id="sidenav"
+      class="fixed top-0 left-0 w-[150px] h-full overflow-auto flex flex-col items-center py-8 gap-8"
+    >
+      <a href="./dashbord.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-line-chart-line text-lg"></i>
+          <label class="text-[12px]">Dashbord</label>
+        </button>
+      </a>
+
+      <a href="./students.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-user-line text-lg"></i>
+          <label class="text-[12px]">Students</label>
+        </button>
+      </a>
+
+      <a href="./subjects.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-book-line text-lg"></i>
+          <label class="text-[12px]">Subjects</label>
+        </button>
+      </a>
+
+      <a href="./classes.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-presentation-line text-lg"></i>
+          <label class="text-[12px]">Classes</label>
+        </button>
+      </a>
+
+      <a href="./payments.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-patreon-line text-lg"></i>
+          <label class="text-[12px]">Payments</label>
+        </button>
+      </a>
+
+      <a href="./teachers.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-user-2-line text-lg"></i>
+          <label class="text-[12px]">Teachers</label>
+        </button>
+      </a>
+
+      <a href="./employees.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-empathize-line text-lg"></i>
+          <label class="text-[12px]">Employees</label>
+        </button>
+      </a>
+
+      <a href="./expenses.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-wallet-3-line text-lg"></i>
+          <label class="text-[12px]">Expenses</label>
+        </button>
+      </a>
+
+      <a href="./salary.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-bank-line text-lg"></i>
+          <label class="text-[12px]">Salaries</label>
+        </button>
+      </a>
+      <a href="./settings.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-settings-2-line text-lg"></i>
+          <label class="text-[12px]">Settings</label>
+        </button>
+      </a>
+    </aside>
+
+    <section class="ml-[150px] p-8 space-y-8" style="width: calc(100% - 150px)">
+      <div
+        class="p-4 bg-white rounded-lg flex justify-between items-center shadow-md"
+      >
+        <div class="flex items-center gap-4">
+          <button
+            class="w-12 h-12 bg-gray-100 hover:bg-gray-200 rounded-full cursor-pointer"
+          >
+            <i class="ri-arrow-left-line"></i>
+          </button>
+          <h1 class="text-lg font-medium select-none">Settings</h1>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-12 gap-8">
+        <div
+          class="bg-white p-12 rounded-lg col-span-4 flex flex-col items-center"
+        >
+          <div>
+            <img src="../images/schLogo.png" class="w-30" />
+          </div>
+          <div class="text-center">
+            <h1 class="text-xl font-medium">Coding School</h1>
+            <p class="text-gray-500">EST : 2025</p>
+          </div>
+        </div>
+        <div class="bg-white p-12 rounded-lg col-span-8">
+          <div class="bg-linear-to-r/hsl from-indigo-500 to-teal-400 p-3 rounded-lg">
+            <h1 class="text-lg font-medium text-white text-center">School Information</h1>
+          </div>
+          <form
+            class="grid grid-cols-2 gap-8 p-6"
+          >
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium"
+                >School's Name</label
+              >
+              <input
+                id="schoolName"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Enter school name"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium"
+                >Director's Name</label
+              >
+              <input
+                id="directorName"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Enter Director's name"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 col-span-2">
+              <label class="text-gray-600 text-base font-medium"
+                >Tagline</label
+              >
+              <input
+                id="tagline"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Enter tagline"
+              />
+            </div>
+
+            
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium">ESTD</label>
+              <input
+                id="estd"
+                type="date"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium"
+                >Reg/No</label
+              >
+              <input
+                id="regNo"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Enter Registration number"
+              />
+            </div>
+           
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium">Mobile</label>
+              <input
+                id="mobile"
+                type="number"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Enter mobile numer"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium">Email</label>
+              <input
+                id="email"
+                type="email"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Enter Email id"
+              />
+            </div>
+            
+
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium">Address</label>
+              <input
+                id="address"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Enter Address"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium">City</label>
+              <input
+                id="city"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="City"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium">State</label>
+              <input
+                id="state"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="State"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium">Country</label>
+              <input
+                id="country"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Country name"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label class="text-gray-600 text-base font-medium"
+                >Pin Code</label
+              >
+              <input
+                id="pinCode"
+                type="number"
+                required
+                class="border border-gray-300 rounded px-2 py-2"
+                placeholder="Ex: 123456"
+              />
+            </div>
+
+            <div></div>
+
+            <div class="flex col-span-2">
+              <button
+                class="bg-linear-to-t from-pink-500 to-rose-500 text-white font-medium px-12 py-2.5 rounded hover:opacity-90 cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              >
+                <i class="ri-arrow-right-line"></i>
+                Save now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        id="drawer"
+        class="fixed top-0 right-0 h-full bg-white shadow-2xl overflow-auto"
+        style="width: 0%; transition: 0.3s"
+      >
+        <div
+          class="flex justify-between items-center p-6 border-b border-b-gray-200"
+        >
+          <h1 class="text-lg font-medium">Add a new teachers</h1>
+          <i
+            class="ri-close-circle-fill cursor-pointer"
+            onclick="closeDrawer()"
+          ></i>
+        </div>
+
+        <form
+          onsubmit="createTeacher(event)"
+          class="grid grid-cols-2 gap-8 p-6"
+        >
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium"
+              >Teacher's Name</label
+            >
+            <input
+              id="teacherName"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="Enter teachers name"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">Gender</label>
+            <select
+              id="gender"
+              required
+              class="border border-gray-300 rounded px-3 py-2"
+            >
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">DOB</label>
+            <input
+              id="dob"
+              type="date"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">Religion</label>
+            <select
+              id="religion"
+              required
+              class="border border-gray-300 rounded px-3 py-2"
+            >
+              <option value="hindu">Hindu</option>
+              <option value="muslim">Muslim</option>
+              <option value="sikh">Sikh</option>
+              <option value="christian">Christian</option>
+              <option value="jain">Jain</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">Mobile</label>
+            <input
+              id="mobile"
+              type="number"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="Enter mobile numer"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">Email</label>
+            <input
+              id="email"
+              type="email"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="Enter Email id"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium"
+              >Qualification</label
+            >
+            <select
+              class="border border-gray-300 rounded px-3 py-2"
+              id="qualification"
+              required
+            >
+              <option value="graduate">Graduate</option>
+              <option value="master">Master</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">Address</label>
+            <input
+              id="address"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="Enter Address"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">City</label>
+            <input
+              id="city"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="City"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">State</label>
+            <input
+              id="state"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="State"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">Country</label>
+            <input
+              id="country"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="Country name"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium">Pin Code</label>
+            <input
+              id="pinCode"
+              type="number"
+              required
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="Ex: 123456"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 col-span-2">
+            <label class="text-gray-600 text-base font-medium">Subjects</label>
+            <select
+              id="subjects"
+              required
+              class="border border-gray-300 rounded px-3 py-2"
+              multiple
+            >
+              <option value="english">English</option>
+              <option value="math">Math</option>
+              <option value="science">Science</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-gray-600 text-base font-medium"
+              >Previous School</label
+            >
+            <input
+              id="previousSchool"
+              class="border border-gray-300 rounded px-2 py-2"
+              placeholder="Namw of previous School"
+            />
+          </div>
+
+          <div></div>
+
+          <div>
+            <button
+              class="bg-linear-to-t from-pink-500 to-rose-500 text-white font-medium px-12 py-2.5 rounded hover:opacity-90 cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            >
+              <i class="ri-arrow-right-line"></i>
+              Add teacher now
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="../script/comman.js"></script>
+    <script src="../script/teachers.js"></script>
+  </body>
+</html>

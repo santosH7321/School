@@ -8,7 +8,7 @@
       href="./images/schoolLogo.png"
       type="image/x-icon"
     />
-    <title>Student</title>
+    <title>Classes</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -345,14 +345,13 @@
             </select>
           </div>
 
-          <div class="flex flex-col gap-2">
-            <label class="text-gray-600 text-base font-medium">Section</label>
-            <input
-              id="section"
-              required
-              class="border border-gray-300 rounded px-2 py-2"
-              placeholder="Ex: A, B, C"
-            />
+          <div class="flex flex-col gap-2 col-span-2">
+            <label class="text-gray-600 text-base font-medium">Section</label> 
+            <select id="sections" required class="border border-gray-300 rounded px-3 py-2" multiple>
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+            </select>
           </div>
 
           <div>

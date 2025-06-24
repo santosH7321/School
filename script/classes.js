@@ -3,7 +3,7 @@ const createClass = (e) => {
     const classes = document.getElementById("classes").value.trim();
     const fee = document.getElementById("fee").value.trim();
     const classTeacher = document.getElementById("classTeacher").value.trim();
-    const section = document.getElementById("section").value.trim();
+    const sections = document.getElementById("sections").value.trim();
 
-    console.log(`Creating class with details: ${classes}, Fee: ${fee}, Class Teacher: ${classTeacher}, section: ${section}`);
+    console.log(`Creating class with details: ${classes}, Fee: ${fee}, Class Teacher: ${classTeacher}, sections: ${sections}`);
 }

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/schoolLogo.png"
+      type="image/x-icon"
+    />
+    <title>Dashbord</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../style/commen.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <select
+      class="bg-white p-3 text-gray-500 fixed top-0 left-0 w-[144px] shadow-lg z-[20000]"
+    >
+      <option>2024-25</option>
+      <option>2023-24</option>
+      <option>2022-23</option>
+    </select>
+    <aside
+      id="sidenav"
+      class="fixed top-12 left-0 w-[150px] h-full overflow-auto flex flex-col items-center py-8 gap-8"
+    >
+      <a href="./dashbord.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-line-chart-line text-lg"></i>
+          <label class="text-[12px]">Dashbord</label>
+        </button>
+      </a>
+
+      <a href="./students.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-user-line text-lg"></i>
+          <label class="text-[12px]">Students</label>
+        </button>
+      </a>
+
+      <a href="./subjects.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-book-line text-lg"></i>
+          <label class="text-[12px]">Subjects</label>
+        </button>
+      </a>
+
+      <a href="./classes.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-presentation-line text-lg"></i>
+          <label class="text-[12px]">Classes</label>
+        </button>
+      </a>
+
+      <a href="./payments.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-patreon-line text-lg"></i>
+          <label class="text-[12px]">Payments</label>
+        </button>
+      </a>
+
+      <a href="./teachers.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-user-2-line text-lg"></i>
+          <label class="text-[12px]">Teachers</label>
+        </button>
+      </a>
+
+      <a href="./employees.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-empathize-line text-lg"></i>
+          <label class="text-[12px]">Employees</label>
+        </button>
+      </a>
+
+      <a href="./expenses.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-wallet-3-line text-lg"></i>
+          <label class="text-[12px]">Expenses</label>
+        </button>
+      </a>
+
+      <a href="./salary.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-bank-line text-lg"></i>
+          <label class="text-[12px]">Salaries</label>
+        </button>
+      </a>
+      <a href="./settings.html">
+        <button
+          class="flex flex-col items-center justify-center bg-white w-[80px] h-[80px] rounded hover:bg-rose-50 hover:font-medium cursor-pointer select-none"
+        >
+          <i class="ri-settings-2-line text-lg"></i>
+          <label class="text-[12px]">Settings</label>
+        </button>
+      </a>
+    </aside>
+
+    <section class="ml-[150px] p-8 space-y-8" style="width: calc(100% - 150px)">
+      <div class="bg-white p-12 rounded-xl flex flex-col items-center gap-1">
+        <img src="../images/schLogo.png" class="w-30" />
+        <h1 class="text-2xl font-medium">Coding international School</h1>
+        <p class="text-gray-500 text-lg">Make your child creativity</p>
+        <p class="text-gray-500 text-sm">www.codingschool.com</p>
+      </div>
+
+      <div class="p-8 bg-white rounded-lg grid lg:grid-cols-4 grid-col-1 gap-8">
+        <div
+          class="flex gap-4 justify-center items-center bg-linear-to-r/hsl from-indigo-500 to-teal-400 rounded-xl shadow p-8 rounded-xl"
+        >
+          <button class="bg-white p-4 w-20 h-20 rounded-full">
+            <i class="ri-user-line text-5xl"></i>
+          </button>
+          <div>
+            <h1 class="text-2xl font-bold text-white">Students</h1>
+            <p class="text-lg text-gray-200">1200</p>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-4 justify-center items-center bg-linear-to-r/hsl from-rose-400 to-yellow-400 rounded-xl shadow p-8 rounded-xl"
+        >
+          <button class="bg-white p-4 w-20 h-20 rounded-full">
+            <i class="ri-artboard-line text-5xl"></i>
+          </button>
+          <div>
+            <h1 class="text-2xl font-bold text-white">Teachers</h1>
+            <p class="text-lg text-gray-200">20</p>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-4 justify-center items-center bg-linear-to-r/hsl from-yellow-600 to-rose-300 rounded-xl shadow p-8 rounded-xl"
+        >
+          <button class="bg-white p-4 w-20 h-20 rounded-full">
+            <i class="ri-user-5-line text-5xl"></i>
+          </button>
+          <div>
+            <h1 class="text-2xl font-bold text-white">Employees</h1>
+            <p class="text-lg text-gray-200">10</p>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-4 justify-center items-center bg-linear-to-r/hsl from-yellow-800 to-rose-900 rounded-xl shadow p-8 rounded-xl"
+        >
+          <button class="bg-white p-4 w-20 h-20 rounded-full">
+            <i class="ri-book-2-line text-5xl"></i>
+          </button>
+          <div>
+            <h1 class="text-2xl font-bold text-white">Subjects</h1>
+            <p class="text-lg text-gray-200">7</p>
+          </div>
+        </div>
+
+        <div class="col-span-4 flex gap-12">
+          <div class="flex-1">
+            <h1 class="text-xl font-semibold">Admission Overview</h1>
+            <canvas id="admission-chart" width="400" height="300"></canvas>
+          </div>
+          <div class="col-span-1 lg:col-span-2 space-y-4">
+            <h1 class="text-xl font-semibold">Payments Status</h1>
+            <canvas id="payment-chart" width="400" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../script/comman.js"></script>
+    <script src="../script/dashbord.js"></script>
+  </body>
+</html>

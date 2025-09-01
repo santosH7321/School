@@ -15,6 +15,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link rel="stylesheet" href="./style/commen.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
   </head>
   <body>
     <div class="flex lg:items-center lg:justify-center h-screen overfloww-hidden bg-grap-100 animate__animated animate__fadeIn ">
@@ -27,8 +30,13 @@
           </div>
           <form class="space-y-3" onsubmit="signup(event)">
             <div class="border-b border-b-slate-300 flex gap-2 items-center">
+              <i class="ri-building-line text-lg text-slate-400"></i>
+              <input id="schoolName" type="text" required class="flex-1 focus:outline-none py-2 placeholder-slate-400" placeholder="School Name"/>
+            </div>
+
+            <div class="border-b border-b-slate-300 flex gap-2 items-center">
               <i class="ri-user-3-line text-lg text-slate-400"></i>
-              <input id="fullname" type="text" required class="flex-1 focus:outline-none py-2 placeholder-slate-400" placeholder="Full Name"/>
+              <input id="dirName" type="text" required class="flex-1 focus:outline-none py-2 placeholder-slate-400" placeholder="Director Name"/>
             </div>
 
             <div class="border-b border-b-slate-300 flex gap-2 items-center">

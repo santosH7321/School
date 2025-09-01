@@ -1,3 +1,5 @@
+axios.defaults.baseURL = server; 
+
 const signup = (e) => {
     e.preventDefault();
     const schoolName = document.getElementById('schoolName').value.trim();
@@ -13,7 +15,7 @@ const signup = (e) => {
         email: email,
         password: password
     }
-    axios.post("http://localhost:8080/school/signup", payload)
+    axios.post("/school/signup", payload)
     .then((res) => {
         new Swal({
             icon: "success",
